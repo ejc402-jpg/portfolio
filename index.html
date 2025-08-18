@@ -18,15 +18,23 @@
                 line-height:1.5;
                 margin:10px auto;
             }
-            .home-button{
-                display:inline-block; 
-                margin:0;
+            .home-button {
+                display: inline-block;
+                margin: 0;
+                text-decoration: none; /* won't do anything on h1 */
+            }
+
+            .home-button a {
+                color: white;
+                text-decoration: none; /* remove underline */
+                display: inline-block;  /* ensures proper size for h1 */
+                font-size: inherit;     /* keeps h1 font size */
+                text-indent:25px;
             }
             .navbar{
                 float:right;
                 list-style:none; 
                 margin:20px; 
-                margin-right:40px;
             }
             .navbar-button{
                 display: inline;
