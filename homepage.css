@@ -1,0 +1,57 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(200, 160, 240, 1) 0%,
+    rgba(210, 180, 245, 1) 20%,
+    rgba(230, 210, 250, 1) 50%,
+    rgba(180, 225, 250, 1) 77%,
+    rgba(150, 230, 255, 1) 100%
+  );
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    padding-right: 20px;
+}
+
+.button {
+    color: black;
+    text-decoration: none;
+}
+
+#home-button {
+    padding-left: 25px;
+}
+
+.list-title{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px 0 20px 0;
+}
+
+.list-list {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.list-entry{
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+}
+
+p#intro{
+    width: 50%;
+    font-size: 20px;
+    margin: 0 auto;
+    padding-right: 20px;
+}
+
+
