@@ -28,3 +28,8 @@ nav {
 #home-button {
     padding-left: 25px;
 }
+
+article {
+    width: 70%;
+    margin: 0 auto;
+}
