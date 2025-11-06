@@ -19,6 +19,58 @@
         </header>
         <main>
             <article>
+                <h2>Picard-Lindelöf Theorem - October 31st, 2025</h2>
+                <p>We couldn't possibly skip over this fundamental theorem.</p>
+                <p>Consider the initial value problem (IVP)</p>
+                <figure>
+                    <img src="picard1.png">
+                </figure>
+                <p>If f is continuous in a region containing <img src="picard2.png"> and is <b>Lipschitz continuous in the second variable</b> y on that region, then the IVP has a <b>unique</b> solution in some interval around <img src="picard3.png"></b></p>
+                <h3>Interpretation</h3>
+                <p>The theorem ensures that a differential equation with sufficiently well-behaved dynamics produces a single trajectory through each initial point. In other words, given an initial condition, the system evolves in a deterministic and predictable way.</p>
+                <h3>Relevance</h3>
+                <p>This theorem forms the theoretical foundation for:</p>
+                <ul>
+                    <li>Existence and uniqueness of solutions to differential equations</li>
+                    <li>Numerical methods such as Picard iteration</li>
+                    <li>Stability and determinism in dynamical systems</li>
+                </ul>
+                <p>If the Lipschitz condition fails, existence may remain but uniqueness can be lost; multiple solution curves might pass through the same initial point.</p>
+            </article>
+            <article>
+                <h2>Lipschitz Functions, Continuity and Constant - October 24th, 2025</h2>
+                <p>A function <img src="lipschitz1.png"> is said to satisfy a <b>Lipschitz Condition</b> on D if there exists a constant L > 0 such that</p>
+                <figure>
+                    <img src="lipschitz2.png"> 
+                </figure>
+                <p>The constant L is called a <b>Lipschitz Constant</b> for f. D is the established domain (possible points) the function under a specified context is define on. Lipschitz continuity is stronger than ordinary continuity in that it adds more stipulations to the function's rate of change progression. Intuitively, it restricts how fast a function can change: the function cannot grow faster than a line with slope L.</p>
+                <h3>Relevance</h3>
+                <p>Lipschitz continuity plays an important role in guaranteeing the uniqueness
+of solutions to differential equations. In machine learning and optimization,
+Lipschitz constraints help ensure stable training, improve robustness to noise,
+and control gradient explosion.</p>
+                <h3>Finding the Lipschitz Constant</h3>
+                <p><b>Differentiable case: </b>If f is differentiable on D and its derivative is bounded, then f is Lipschitz on D. More precisely, if</p>
+                <figure>
+                    <img src="lipschitz3.png">
+                </figure>
+                <p>then f is Lipschitz on D with Lipschitz constant L (here D represents derivation, not the function's domain). For scalar functions <img src="lipschitz4.png">, this reduces to</p>
+                <figure>
+                    <img src="lipschitz5.png">
+                </figure>
+                <p><b>Non-differentiable case: </b> If f is not differentiable, one may compute the Lipschitz constant by</p>
+                <figure>
+                    <img src="lipschitz6.png">
+                </figure>
+                <p>Strategies include:</p>
+                <ol>
+                    <li>Directly bounding <img src="lipschitz7.png"></li>
+                    <li>Show f is piecewise differentiable and each piece has bounded derivative.</li>
+                    <li>Using geometric or norm inequalities to bound differences.</li>
+                </ol>
+                <p>Note that differentiability is not required for Lipschitz continuity; for example, f(x) = |x| is Lipschitz on R with constant L = 1, yet f is not differentiable at x = 0.</p>
+            </article>
+            <article>
                 <h2>The Truth Behind Video Game Dice-Based Mechanics - September 5th, 2025</h2>
                 <p>
                     As a long time fanatic and enjoyer of Nintendo multiplayer party games—particularly the original Wii series in <i>Mario Party 8</i> and <i>Wii Party</i>—I’ve always appreciated how game fundamentals like simple controls, quality minigames, and personalized competition work together to create a timeless experience every time you boot up the console. One possible explanation for their success is the balance between skill and “luck”, the presence of unpredictable game elements that change the dynamics of games like that. However, this aspect of these games is something that has endured much speculation and scrutiny since their releases, fueling game theorists’ paychecks for years! That is, whether the game’s dice rolls are truly randomized, or are pre-programmed combinations designed to materialize by seemingly random chance. Beyond the typical sore-loser coping about consecutively terrible rolls, there seems to be real merit behind discussing real, gameplay-affecting implications of manufactured dice rolls. By taking a deeper dive into the probabilistic nature of these party games, we’ll be able to better understand multiplayer design and see if our favorite childhood games have been selling us a lie all along.
